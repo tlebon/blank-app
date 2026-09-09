@@ -35,14 +35,14 @@ with tab2:
         serving = st.select_slider(
             options=[a*5 for a in range(0, 15)], label='choose a serving')
         if st.button('fries'):
-            if serving == 20:
+            if serving == fry["serving"]:
                 st.balloons()
                 st.success(
                     'yummy', icon="🍟")
-            elif serving < 20:
+            elif serving < fry["serving"]:
                 st.error(
                     'im still hungry', icon="🤤")
-            elif serving > 20:
+            elif serving > fry["serving"]:
                 st.error(
                     'i feel gross', icon="🫃")
 
@@ -62,8 +62,10 @@ with tab2:
         )
 
         if st.button('lets eat!'):
-            if selection == fry2['origin']:
+            if selection is None:
+                st.warning('Choose where you think this fry came from.')
+            elif selection == fry2['origin']:
                 st.success(
                     'You know your fries! 🍟', icon="✅")
             else:
-                st.error('still tastes good')
+                st.error('wrong, still tastes good tho')
