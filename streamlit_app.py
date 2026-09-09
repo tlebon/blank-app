@@ -1,7 +1,14 @@
 import streamlit as st
 
-st.title("🎈 My new app")
-st.write(
-    "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
-)
-st.write('wassup folks')
+st.header("I'm tim 😊,")
+st.write('wassup folks. my name is tim and im a very complicated person with many wants and desires.')
+option = st.selectbox(label='which thing is my favorite?', options=['cat','dog','lizard','french fries'])
+if st.button('Make a choice'):
+  if option=='dog':
+    st.balloons()
+    st.success('Yes its a dog, but french fries are a close second!', icon="✅")
+  else: 
+    st.error('Do you know me at all?', icon="😩")
+
+
+
