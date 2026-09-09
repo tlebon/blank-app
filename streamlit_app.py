@@ -3,7 +3,7 @@ import streamlit as st
 st.header("I'm tim 😊")
 st.write('wassup folks. my name is tim and im a very complicated person with many wants and desires.')
 
-tab1, tab2, tab3 = st.tabs(["get to know me", "get to know the world", "Owl"])
+tab1, tab2, tab3 = st.tabs(["get to know me", "get to know one of my loves", "Owl"])
 
 with tab1:
     option = st.selectbox(label='which thing is my favorite?', options=[
