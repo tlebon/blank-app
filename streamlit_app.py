@@ -58,7 +58,7 @@ with tab2:
         )
 
         if st.button('lets eat!'):
-            if selection == [8]:
+            if selection == 8:
                 st.snow()
                 st.success(
                     'hey, not real yet anyway, but i can dream', icon='☃️')
