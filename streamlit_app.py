@@ -27,6 +27,7 @@ with tab2:
             options=[a*5 for a in range(0, 15)], label='choose a serving')
         if st.button('fries'):
             if serving == 20:
+                st.balloons()
                 st.success(
                     'yummy', icon="🍟")
             elif serving < 20:
