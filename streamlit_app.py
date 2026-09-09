@@ -54,7 +54,7 @@ with tab2:
             "Tool",
             options=option_map.keys(),
             format_func=lambda option: option_map[option],
-            selection_mode="multi",
+            selection_mode="single",
         )
 
         if st.button('lets eat!'):
