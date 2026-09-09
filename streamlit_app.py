@@ -38,7 +38,7 @@ with tab2:
                     'i feel gross', icon="🫃")
 
     with col2:
-        st.header('which french fries types are not real')
+        st.header('which french fries type is not real')
         option_map = {
             0: "curly",
             1: "thin",
